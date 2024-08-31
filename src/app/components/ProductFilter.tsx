@@ -22,7 +22,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({ onFilter }) => {
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded text-sm"
         >
           <option value="">All Categories</option>
           <option value="Electronics">Electronics</option>
@@ -39,7 +39,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({ onFilter }) => {
           value={maxPrice || ""}
           onChange={(e) => setMaxPrice(Number(e.target.value))}
           placeholder="Enter max price"
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded text-sm"
         />
       </div>
       <Button onClick={handleFilter} className="w-full p-2  text-white rounded">
